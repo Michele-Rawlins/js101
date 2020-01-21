@@ -1,1 +1,1 @@
-console.log("Snow day");
+console.log("snow day");

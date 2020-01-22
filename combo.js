@@ -17,23 +17,23 @@ const opposite = (number) => {
 console.log(opposite(4));
 
 const palindrome = (text) => {
-    const reversedText  = text.toLowerCase()
-     .split('').reverse().join('');
+    const cleanText = text.toLowerCase().replace(' ', '');
+    const reversedText  = cleanText.split('').reverse().join('');
 if (text === reversedText) {
-return true
+return true;
 } else {
-    return false
+    return false;
 }
 };
 
-    
-console.log(palindrome('plane'));
+
+console.log(palindrome('mom'));
 
 const lawrence = (animal) => {
 
-    if (animal === 'alligator') {
+    if (animal.toLowerCase() === 'alligator') {
         return 'small'
-    }else{
+    }else {
         return 'wide'
     }
 
